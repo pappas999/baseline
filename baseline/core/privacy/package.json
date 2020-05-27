@@ -14,17 +14,20 @@
     "build:umd": "webpack",
     "build": "npm run clean && npm run build:cjs && npm run build:umd",
     "clean": "rm -rf ./dist",
-    "test": "jest --passWithNoTests"
+    "test": "jest --no-cache --passWithNoTests"
   },
   "dependencies": {
     "zokrates-js": "^1.0.21"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.18",
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@types/jest": "^25.2.3",
     "@types/jsonwebtoken": "^8.3.4",
-    "@types/node": "^12.0.10",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.1.0",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "jest-esm-transformer": "^1.0.0",
+    "ts-jest": "^26.0.0",
     "ts-loader": "^6.0.4",
     "tslint": "5.20.1",
     "tslint-config-airbnb": "5.11.2",

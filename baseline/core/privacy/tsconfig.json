@@ -1,7 +1,10 @@
 {
-  "include": ["./src/**/*"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
   "compilerOptions": {
-    "allowJs": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "declaration": true,
@@ -10,8 +13,8 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es2017", "dom", "esnext.asynciterable"],
-    "module": "esnext",
+    "lib": ["dom", "es2017"],
+    "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "noImplicitReturns": true,
